@@ -26,11 +26,14 @@ const Projects = g.type(
   }
 );
 
-export default config({
+const grafbaseConfig = config({
   graph: g,
   auth: {
     rules: (rules) => {
-      rules.public()
+      rules.public();
     },
   },
-})
+});
+
+export default grafbaseConfig
+
