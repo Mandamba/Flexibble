@@ -26,7 +26,7 @@ const Projects = g.type(
   }
 );
 
-const grafbaseConfig = config({
+export default config({
   graph: g,
   auth: {
     rules: (rules) => {
@@ -34,6 +34,4 @@ const grafbaseConfig = config({
     },
   },
 });
-
-export default grafbaseConfig
 
